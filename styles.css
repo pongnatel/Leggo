@@ -17,6 +17,12 @@ body{
     font-weight: 500;
 }
 
+.col.desc{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
 .col.form{
     text-align: left;
 }
