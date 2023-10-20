@@ -17,14 +17,31 @@ body{
     font-weight: 500;
 }
 
+.title{
+    margin: 30;
+    font-size:xx-large;
+}
+
 /* .desc{
     font-size: 20px;
     font-weight: 500;
     text-align: left;
 } */
 
+
 .col.form{
     text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mb-3{
+    width: 150
+}
+
+img{
+    width: 50;
 }
 
 .result{
@@ -34,5 +51,14 @@ body{
 
 .green-text {
     color: green;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ref{
+    font-size: 30;
 }
 
