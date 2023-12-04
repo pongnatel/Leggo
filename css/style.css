@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.section_one {
+  background-color: #ddfb65;
+}
+
+.section_two {
+  background-color: white;
+}
+
+.section_two .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_three {
+  background-color: #ddfb65;
+  flex-direction: column;
+}
+
+.col_small {
+  width: 40%;
+  color: black;
+}
+
+.col_big {
+  width: 60%;
+}
+
+.col_item {
+  margin: 1rem 0 1rem 0;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 5rem;
+  color: #3103fd;
+}
+
+h2 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 3rem;
+}
+h3 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.3rem;
+}
+
+.nextbtn {
+  background-color: #3103fd;
+  width: fit-content;
+  /* margin: auto; */
+  padding: 10px;
+  color: #ddfb65;
+  box-shadow: 5px 5px black;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nextbtn:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.col.form {
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.mb-3 {
+  width: 150;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0.25rem 0rem 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-lg {
+  min-height: calc(1.5em + (1rem + 2px));
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+}
+
+label {
+  display: inline-block;
+}
+
+.green-text {
+  color: green;
+  font-size: 3rem;
+}
