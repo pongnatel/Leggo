@@ -1,4 +1,6 @@
 const avg_co2_factor = 0.11337;
+const slide_form = document.getElementsByClassName("slides_form")[0];
+const slide_result = document.getElementsByClassName("slides_result")[0];
 
 function updateResult() {
   const inputElements = document.querySelectorAll("input");
@@ -31,4 +33,14 @@ function updateResult() {
 function scrollToNextSection() {
   const nextSection = document.querySelector(".section_two"); // Change this selector based on your structure
   nextSection.scrollIntoView({ behavior: "smooth" });
+}
+
+function moveToResult() {
+  slide_form.classList.add("inactive");
+  slide_result.classList.remove("inactive");
+}
+
+function moveToForm() {
+  slide_result.classList.add("inactive");
+  slide_form.classList.remove("inactive");
 }

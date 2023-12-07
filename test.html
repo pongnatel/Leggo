@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .disappear {
+        width: 200px;
+        height: 100px;
+        background-color: #f0f0f0;
+        transition: transform 0.5s ease-out, opacity 1s ease-out;
+      }
+
+      .hidden {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+    </style>
+    <title>Disappear Animation</title>
+  </head>
+  <body>
+    <div id="myDiv" class="disappear">Content inside the disappearing div.</div>
+
+    <script>
+      // JavaScript to trigger the disappearance after a delay
+      setTimeout(() => {
+        const myDiv = document.getElementById("myDiv");
+        myDiv.classList.add("hidden");
+      }, 2000); // Delay in milliseconds
+    </script>
+  </body>
+</html>

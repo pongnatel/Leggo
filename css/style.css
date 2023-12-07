@@ -16,6 +16,7 @@
 }
 
 .section {
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -32,13 +33,34 @@
 
 .section_two {
   background-color: white;
+  width: 100%;
+  flex: none;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
 
-.section_two .col {
+.slides {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.inactive {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slides_result.inactive {
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 .section_three {
@@ -97,8 +119,8 @@
   width: 60%;
 }
 
-.col_item {
-  margin: 1rem 0 1rem 0;
+.row_item {
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 h1 {
@@ -107,16 +129,21 @@ h1 {
 }
 
 h2 {
+  color: black;
   font-size: 3rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: black;
 }
 
 p {
   font-size: 1.3rem;
   color: white;
+}
+
+.slides_result p {
+  color: #000;
 }
 
 .nextbtn {
@@ -128,6 +155,7 @@ p {
   margin-top: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  color: #000;
 }
 
 .nextbtn p {
@@ -146,6 +174,7 @@ p {
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
+  gap: 1rem;
 }
 
 .mb-3 {
@@ -153,7 +182,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0.25rem 0rem 0.25rem;
 }
 
 .form-control {
@@ -177,7 +205,7 @@ p {
 .form-control-lg {
   min-height: calc(1.5em + (1rem + 2px));
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   border-radius: 0.3rem;
 }
 
@@ -193,5 +221,63 @@ label {
 
 .green-text {
   color: green;
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 8px;
+  }
+
+  .section_one {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .title {
+    letter-spacing: normal;
+  }
+
+  .slides {
+    align-items: center;
+  }
+
+  .slides button {
+    margin-top: 0;
+  }
+
+  .row_item {
+    text-align: center;
+  }
+
+  .col.form {
+    flex-direction: column;
+  }
+
+  .form-label,
+  .form-control-lg {
+    font-size: 2rem;
+  }
+
+  .slides_result h2 {
+    font-size: 4rem;
+  }
+
+  .slides_result h3 {
+    font-size: 3.5rem;
+  }
+
+  .slides_result .green-text {
+    font-size: 6rem;
+  }
+
+  .slides_result p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-height: 380px) {
+  * {
+    font-size: 7px;
+  }
 }
