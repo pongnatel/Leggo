@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
   box-sizing: border-box;
-  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  font-family: "Paytone One", sans-serif;
 }
 
 .container {
@@ -23,7 +24,10 @@
 }
 
 .section_one {
-  background-color: #ddfb65;
+  /* background-color: #ddfb65; */
+  background-color: #08041a;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .section_two {
@@ -42,6 +46,48 @@
   flex-direction: column;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.header:hover {
+  transform: scale(1.1);
+}
+
+.event {
+  font-size: 4.8rem;
+  height: 5.6rem;
+  width: fit-content;
+  padding: 0;
+}
+
+.club {
+  font-size: 0.9rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 6px;
+}
+
+.title h1 {
+  height: 6.7rem;
+}
+
+.desc {
+  margin-bottom: 5rem;
+}
+
+.desc p {
+  font-size: 1.5rem;
+}
+
 .col_small {
   width: 40%;
   color: black;
@@ -56,36 +102,38 @@
 }
 
 h1 {
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 5rem;
-  color: #3103fd;
+  font-size: 6rem;
+  color: #fff560;
 }
 
 h2 {
-  font-family: "Chakra Petch", sans-serif;
   font-size: 3rem;
 }
 h3 {
-  font-family: "Chakra Petch", sans-serif;
   font-size: 2rem;
   color: black;
 }
 
 p {
-  font-family: "Chakra Petch", sans-serif;
   font-size: 1.3rem;
+  color: white;
 }
 
 .nextbtn {
-  background-color: #3103fd;
+  background-color: #fff560;
   width: fit-content;
   /* margin: auto; */
   padding: 10px;
-  color: #ddfb65;
   box-shadow: 5px 5px black;
   margin-top: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+.nextbtn p {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .nextbtn:hover {
@@ -135,7 +183,6 @@ p {
 
 .form-label {
   margin-bottom: 0.5rem;
-  font-family: "Chakra Petch", sans-serif;
   font-size: 1.5rem;
   color: black;
 }
