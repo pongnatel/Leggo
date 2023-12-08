@@ -345,6 +345,11 @@ img#techno {
 
   .desc {
     margin-top: 0rem;
+    width: 90%;
+  }
+
+  .desc p {
+    font-size: 2rem;
   }
 
   .slides button {
