@@ -364,6 +364,10 @@ img#techno {
     font-size: 2rem;
   }
 
+  .slides_form {
+    align-self: center;
+  }
+
   .slides_result h2 {
     font-size: 4rem;
   }
