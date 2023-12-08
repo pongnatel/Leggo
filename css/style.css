@@ -254,7 +254,7 @@ label {
 
 .mascot,
 .mascot2 {
-  z-index: 10;
+  z-index: 1;
 }
 
 .mascot img {
@@ -267,6 +267,41 @@ label {
   width: 400px;
   bottom: 0;
   transform: translate(-50%, 110%);
+}
+
+.mascot3 img {
+  z-index: -1;
+  width: 500px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  animation: rotateAnimation 5s linear infinite;
+  transform-origin: center center;
+}
+
+.mascot4 img {
+  width: 200px;
+  animation: rotateAnimation1 5s linear infinite;
+  display: none;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: translate(50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotateAnimation1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 img#echco {
@@ -351,6 +386,14 @@ img#techno {
 
   .mascot2 {
     display: none;
+  }
+
+  .mascot3 img {
+    display: none;
+  }
+
+  .mascot4 img {
+    display: block;
   }
 }
 
