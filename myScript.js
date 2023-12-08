@@ -10,11 +10,12 @@ function updateResult() {
   let totalCo2Emission = 0;
 
   inputElements.forEach(function (inputElement) {
-    const value = parseFloat(inputElement.value);
+    const inputValue = inputElement.value.replace(",", ".");
+    const processedValue = parseFloat(inputValue);
 
-    if (!isNaN(value)) {
-      totalKm += value;
-      totalCo2Emission += value * avg_co2_factor;
+    if (!isNaN(processedValue)) {
+      totalKm += processedValue;
+      totalCo2Emission += processedValue * avg_co2_factor;
     }
   });
 
