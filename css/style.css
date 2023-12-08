@@ -22,6 +22,8 @@
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
 }
 
 .section_one {
@@ -103,7 +105,9 @@
 }
 
 .desc {
+  margin-top: 4rem;
   margin-bottom: 5rem;
+  width: 50%;
 }
 
 .desc p {
@@ -149,13 +153,14 @@ p {
 .nextbtn {
   background-color: #fff560;
   width: fit-content;
-  /* margin: auto; */
+  margin: auto;
   padding: 10px;
   box-shadow: 5px 5px black;
   margin-top: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
   color: #000;
+  font-size: 2rem;
 }
 
 .nextbtn p {
@@ -221,7 +226,41 @@ label {
 
 .green-text {
   color: green;
-  font-size: 4rem;
+  font-size: 7rem;
+}
+
+#result {
+  color: #000;
+}
+
+.mascot {
+  z-index: 10;
+}
+
+.mascot img {
+  position: absolute;
+  width: 500px;
+}
+
+img#echco {
+  top: 0;
+  left: 0;
+  transform: translateX(-35%) rotate(30deg);
+}
+img#imo {
+  top: 0;
+  right: 0;
+  transform: translateX(35%) rotate(-30deg);
+}
+img#hacco {
+  bottom: 0;
+  left: 0;
+  transform: translate(-35%, 35%) scaleX(-1);
+}
+img#techno {
+  bottom: 0;
+  right: 0;
+  transform: translate(35%, 35%);
 }
 
 @media screen and (max-width: 768px) {
