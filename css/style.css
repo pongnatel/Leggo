@@ -55,6 +55,11 @@
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
+.slides_form {
+  align-self: flex-start;
+  margin-top: 5rem;
+}
+
 .inactive {
   transform: translateX(-100%);
   opacity: 0;
@@ -89,6 +94,15 @@
   padding: 0;
 }
 
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 .club {
   font-size: 0.9rem;
 }
@@ -98,6 +112,7 @@
   flex-direction: column;
   align-items: center;
   letter-spacing: 6px;
+  animation: scaleAnimation 1s infinite alternate;
 }
 
 .title h1 {
@@ -229,17 +244,29 @@ label {
   font-size: 7rem;
 }
 
+#total .green-text {
+  font-size: 5rem;
+}
+
 #result {
   color: #000;
 }
 
-.mascot {
+.mascot,
+.mascot2 {
   z-index: 10;
 }
 
 .mascot img {
   position: absolute;
   width: 500px;
+}
+
+.mascot2 img {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  transform: translate(-50%, 110%);
 }
 
 img#echco {
@@ -281,6 +308,10 @@ img#techno {
     align-items: center;
   }
 
+  .desc {
+    margin-top: 0rem;
+  }
+
   .slides button {
     margin-top: 0;
   }
@@ -312,6 +343,14 @@ img#techno {
 
   .slides_result p {
     font-size: 2rem;
+  }
+
+  .mascot img {
+    width: 200px;
+  }
+
+  .mascot2 {
+    display: none;
   }
 }
 
