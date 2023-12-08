@@ -317,7 +317,7 @@ img#imo {
 img#hacco {
   bottom: 0;
   left: 0;
-  transform: translate(-35%, 35%) scaleX(-1);
+  transform: translate(-35%, 35%);
 }
 img#techno {
   bottom: 0;
