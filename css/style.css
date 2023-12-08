@@ -356,7 +356,7 @@ img#techno {
   }
 
   .col.form {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .form-label,
