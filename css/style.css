@@ -252,6 +252,10 @@ label {
   color: #000;
 }
 
+.section_one .row {
+  z-index: 3;
+}
+
 .mascot,
 .mascot2 {
   z-index: 1;
